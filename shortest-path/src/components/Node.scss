@@ -1,0 +1,66 @@
+
+
+
+.node-default {
+    width: 30px;
+    height: 30px;
+    background-color: #525d75;
+    border: 1px solid #7c8bac;
+}
+
+.node-wall{
+    width: 30px;
+    height: 30px;
+    background-color: #5f0909;
+}
+
+.node-start {
+    width: 30px;
+    height: 30px;
+    background-color: #ffd104;
+}
+.node-finish {
+    width: 30px;
+    height: 30px;
+    background-color: #ffd104;
+}
+
+.node-visited {
+    width: 30px;
+    height: 30px;
+    animation-name: visited;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.node-path {
+    width: 30px;
+    height: 30px;
+    background-color: #ffd104;
+}
+
+
+@keyframes visited {
+    0% {
+        //transform: scale(0.3);
+        background-color: #a4e5ff;
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: #50cdff;
+    }
+
+    75% {
+        //transform: scale(1.2);
+        background-color: #005577;
+    }
+
+    100% {
+        //transform: scale(1);
+        background-color: #00a6e7;
+    }
+}
